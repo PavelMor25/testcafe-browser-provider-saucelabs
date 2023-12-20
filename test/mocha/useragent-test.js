@@ -17,12 +17,12 @@ describe('Useragent info', function () {
         return testcafe.close();
     });
 
-    it('Should add a link to Saucelabs', function () {
+    it('Should ad a link to Saucelabs', function () {
         var report = '';
         var runner = testcafe.createRunner();
 
         return runner
-            .browsers('saucelabs:chrome')
+            .browsers('saucelabs:Chrome')
             .src('test/testcafe/resize-test.js')
             .reporter('json', {
                 write: function (data) {
